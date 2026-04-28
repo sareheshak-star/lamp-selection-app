@@ -1,0 +1,15 @@
+{
+  "name": "lamp-selection-system",
+  "version": "1.0.0",
+  "description": "UVC Lamp Selection System - Web Application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "express-session": "^1.18.0",
+    "bcryptjs": "^2.4.3"
+  }
+}

@@ -16,7 +16,14 @@ function ensureDataDir() {
     fs.mkdirSync(dir, { recursive: true });
   }
   if (!fs.existsSync(USERS_FILE)) {
-    fs.writeFileSync(USERS_FILE, '[]', 'utf8');
+    const defaultAdmin = [{
+      "email": "admin@company.com",
+      "passwordHash": "$2a$10$2iZhJZelizBwVgt3uHA4QuRP3rL5puGbY09LogtckInwO9sdkvotW", // Hash for 'password123'
+      "name": "Admin",
+      "role": "admin",
+      "createdAt": new Date().toISOString()
+    }];
+    fs.writeFileSync(USERS_FILE, JSON.stringify(defaultAdmin, null, 2), 'utf8');
   }
 }
 

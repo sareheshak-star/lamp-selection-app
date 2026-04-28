@@ -14,30 +14,30 @@
 
   --border-subtle: rgba(148, 163, 184, 0.1);
   --border-input: rgba(148, 163, 184, 0.2);
-  --border-focus: #f59e0b;
+  --border-focus: #a53692;
 
-  --text-primary: #f1f5f9;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
-  --text-accent: #fbbf24;
+  --text-primary: #ffffff;
+  --text-secondary: #ffffff;
+  --text-muted: #ffffff;
+  --text-accent: #a53692;
 
-  --accent-amber: #f59e0b;
-  --accent-amber-light: #fbbf24;
-  --accent-amber-glow: rgba(245, 158, 11, 0.25);
-  --accent-blue: #3b82f6;
-  --accent-blue-light: #60a5fa;
-  --accent-cyan: #06b6d4;
-  --accent-emerald: #10b981;
+  --accent-amber: #a53692;
+  --accent-amber-light: #a53692;
+  --accent-amber-glow: rgba(165, 54, 146, 0.25);
+  --accent-blue: #a53692;
+  --accent-blue-light: #a53692;
+  --accent-cyan: #a53692;
+  --accent-emerald: #a53692;
 
-  --gradient-primary: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-  --gradient-blue: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
-  --gradient-card: linear-gradient(135deg, rgba(251, 191, 36, 0.05) 0%, rgba(6, 182, 212, 0.05) 100%);
+  --gradient-primary: linear-gradient(135deg, #a53692 0%, #7a286c 100%);
+  --gradient-blue: linear-gradient(135deg, #a53692 0%, #7a286c 100%);
+  --gradient-card: linear-gradient(135deg, rgba(251, 191, 36, 0.05) 0%, rgba(165, 54, 146, 0.05) 100%);
 
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
-  --shadow-glow: 0 0 30px rgba(245, 158, 11, 0.15);
+  --shadow-glow: 0 0 30px rgba(165, 54, 146, 0.15);
 
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -196,12 +196,12 @@ body {
 .logo-icon svg {
   width: 100%;
   height: 100%;
-  filter: drop-shadow(0 0 12px rgba(245, 158, 11, 0.4));
+  filter: drop-shadow(0 0 12px rgba(165, 54, 146, 0.4));
 }
 
 @keyframes glow-pulse {
-  0%, 100% { filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.3)); }
-  50% { filter: drop-shadow(0 0 20px rgba(245, 158, 11, 0.6)); }
+  0%, 100% { filter: drop-shadow(0 0 8px rgba(165, 54, 146, 0.3)); }
+  50% { filter: drop-shadow(0 0 20px rgba(165, 54, 146, 0.6)); }
 }
 
 .login-title {
@@ -325,15 +325,15 @@ input:focus + .input-icon,
 
 .btn-primary {
   background: var(--gradient-primary);
-  color: #1a1a1a;
+  color: #ffffff;
   padding: 12px 24px;
   font-size: 0.9375rem;
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-md), 0 0 20px rgba(245, 158, 11, 0.2);
+  box-shadow: var(--shadow-md), 0 0 20px rgba(165, 54, 146, 0.2);
 }
 .btn-primary:hover:not(:disabled) {
   transform: translateY(-1px);
-  box-shadow: var(--shadow-lg), 0 0 30px rgba(245, 158, 11, 0.35);
+  box-shadow: var(--shadow-lg), 0 0 30px rgba(165, 54, 146, 0.35);
 }
 .btn-primary:active:not(:disabled) {
   transform: translateY(0);
@@ -482,7 +482,7 @@ input:focus + .input-icon,
   flex-shrink: 0;
 }
 .input-icon-wrap {
-  background: rgba(245, 158, 11, 0.1);
+  background: rgba(165, 54, 146, 0.1);
   color: var(--accent-amber);
 }
 .section-icon svg {
@@ -584,11 +584,11 @@ input:focus + .input-icon,
   height: 14px;
 }
 .badge-primary {
-  background: rgba(245, 158, 11, 0.12);
+  background: rgba(165, 54, 146, 0.12);
   color: var(--accent-amber-light);
 }
 .badge-secondary {
-  background: rgba(59, 130, 246, 0.12);
+  background: rgba(165, 54, 146, 0.12);
   color: var(--accent-blue-light);
 }
 
@@ -665,7 +665,7 @@ input:focus + .input-icon,
 }
 
 .mgmt-icon-wrap {
-  background: rgba(6, 182, 212, 0.1);
+  background: rgba(165, 54, 146, 0.1);
   color: var(--accent-cyan);
 }
 
@@ -743,7 +743,7 @@ input:focus + .input-icon,
 }
 
 .role-admin {
-  background: rgba(245, 158, 11, 0.15);
+  background: rgba(165, 54, 146, 0.15);
   color: var(--accent-amber-light);
 }
 
@@ -905,7 +905,7 @@ input:focus + .input-icon,
    UTILITY
    ═══════════════════════════════════════════════════ */
 ::selection {
-  background: rgba(245, 158, 11, 0.3);
+  background: rgba(165, 54, 146, 0.3);
   color: var(--text-primary);
 }
 
@@ -932,4 +932,17 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 input[type="number"] {
   -moz-appearance: textfield;
+}
+
+/* Disclaimer Footer */
+.app-disclaimer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 0.75rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+.app-disclaimer p {
+  margin-bottom: 8px;
 }

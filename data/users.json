@@ -1,0 +1,9 @@
+[
+  {
+    "email": "admin@company.com",
+    "passwordHash": "$2a$10$2iZhJZelizBwVgt3uHA4QuRP3rL5puGbY09LogtckInwO9sdkvotW",
+    "name": "Admin",
+    "role": "admin",
+    "createdAt": "2026-04-27T21:10:36.620Z"
+  }
+]
